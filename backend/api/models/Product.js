@@ -8,7 +8,17 @@
 module.exports = {
 
   attributes: {
-
+    name:{
+      type:'string',
+      required:true
+    },
+    price:{
+      type:'integer',
+      required:true
+    },
+    category:{
+      type:'string',
+      required:true
+    }
   }
 };
-
