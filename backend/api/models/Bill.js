@@ -8,7 +8,15 @@
 module.exports = {
 
   attributes: {
-
+    products:{
+      type:'array'
+    },
+    billedTo:{
+      type:'string',
+      required:true
+    },
+    discount:{
+      type:'integer'
+    }
   }
 };
-
