@@ -18,6 +18,20 @@
         "marker": "/* Add Component LESS Above */",
         "template": "@import \"<%= filename %>\";"
       }
-    }
+    },
+    "modules": [
+      {
+        "name": "stock",
+        "file": "stock\\stock.js"
+      },
+      {
+        "name": "product",
+        "file": "product\\product.js"
+      },
+      {
+        "name": "bill",
+        "file": "bill\\bill.js"
+      }
+    ]
   }
 }
