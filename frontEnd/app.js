@@ -1,6 +1,6 @@
 (function(){
-  
-var modules = ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate', 'stock', 'product', 'bill'];
+
+var modules = ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate','restangular', 'stock', 'product', 'bill'];
 
 angular.module('stockey', modules);
 

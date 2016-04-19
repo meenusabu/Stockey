@@ -1,8 +1,11 @@
-angular.module('stock', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
-
-angular.module('stock').config(function($stateProvider) {
+(function(){
+angular.module('stock', []).config(config);
+function config($stateProvider,$urlRouterProvider) {
+//  $stateProvider.state('StockIndex')
 
     /* Add New States Above */
 
-});
+}
 
+
+})();

@@ -1,8 +1,9 @@
-angular.module('bill', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
+(function(){
+angular.module('bill', []).config(config);
 
-angular.module('bill').config(function($stateProvider) {
+function($stateProvider) {
 
     /* Add New States Above */
 
-});
-
+}
+})();
