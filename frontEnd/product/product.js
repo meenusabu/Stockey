@@ -1,8 +1,9 @@
-angular.module('product', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
+(function(){
+angular.module('product', []).config(config);
+function config($stateProvider) {
 
-angular.module('product').config(function($stateProvider) {
+  /* Add New States Above */
 
-    /* Add New States Above */
+}
 
-});
-
+})();
