@@ -19,6 +19,9 @@ module.exports = {
     category:{
       type:'string',
       required:true
+    },
+    stock:{
+      model:'stock'
     }
   }
 };

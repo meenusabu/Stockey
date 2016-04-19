@@ -8,7 +8,12 @@
 module.exports = {
 
   attributes: {
-
+    product:{
+      model:'product'
+    },
+    quantity:{
+      type:'integer',
+      required:true
+    }
   }
 };
-
