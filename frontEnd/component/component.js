@@ -3,7 +3,8 @@
 angular.module('stockey').component('createUpdate', {
 
       bindings:{
-          ngModel: '='
+          value: '=',
+          type: '@'
       },
       templateUrl: 'component/component.html',
       controllerAs:'ctrl',

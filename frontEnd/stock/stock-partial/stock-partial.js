@@ -20,5 +20,11 @@
 
   index();
   }
+  function StockCreateController(Restangular,$state){
+    var vm=this;
+    vm.stockItem={"name":"apple","quantity":40};
+  }
+
   angular.module('stock').controller('StockIndexController',StockIndexController);
+  angular.module('stock').controller('StockCreateController',StockCreateController);
   })();

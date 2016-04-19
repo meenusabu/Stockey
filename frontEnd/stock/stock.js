@@ -8,6 +8,13 @@ function config($stateProvider,$urlRouterProvider) {
     controllerAs:'ctrl'
   }
 );
+$stateProvider.state('StockCreate',{
+  url:'/stock/create',
+  templateUrl:'stock/stock-partial/stock-create.html',
+  controller:'StockCreateController',
+  controllerAs:'ctrl'
+}
+);
 
     /* Add New States Above */
 
