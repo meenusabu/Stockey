@@ -1,11 +1,11 @@
 <div class="col-md-12" style="padding-top:20px" >
-  <button type="button" class="btn btn-primary  pull-right" >Large button</button>
+  <button type="button" class="btn btn-primary  pull-right" >create</button>
 <br>
 <br>
 <div class="panel panel-primary" >
   <div class="panel-heading"><h3>Stock Items</h3></div>
 
-  <table class="table">
+  <table class="table" ng-show="ctrl.stockData.length">
     <thead>
       <tr>
         <th>Id</th>
@@ -19,11 +19,12 @@
         <td class="col-md-3">{{value.product.name}}</td>
         <td class="col-md-3">{{value.quantity}}</td>
         <td class="col-md-3"><button type="button" class="btn btn-primary">Update</button>
-        <button type="button" class="btn btn-danger">Delete</button></td>
+        <button type="button" class="btn btn-danger" ng-click="ctrl.remove(value)">Delete</button></td>
       </tr>
 
     </tbody>
   </table>
+  <center ng-hide="ctrl.stockData.length" ><h3>No stock available</h3></center>
 
 </div>
 
