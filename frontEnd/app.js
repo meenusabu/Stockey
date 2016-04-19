@@ -4,8 +4,13 @@ var modules = ['ui.bootstrap', 'ui.utils', 'ui.router', 'ngAnimate','restangular
 
 angular.module('stockey', modules);
 
-function config($stateProvider, $urlRouterProvider) {
-
+function config($stateProvider, $urlRouterProvider,RestangularProvider) {
+  RestangularProvider.setDefaultHeaders({
+    "Content-Type": "application/json",
+    "X-Requested-With": "XMLHttpRequest"
+  });
+  RestangularProvider.setDefaultHttpFields({withCredentials: true});
+RestangularProvider.setBaseUrl("http://localhost:1337/");
     /* Add New States Above */
   $urlRouterProvider.otherwise('/home');
 }
